@@ -1,3 +1,9 @@
+<div align="right">
+
+**English** | [简体中文](./README_CN.md)
+
+</div>
+
 # Hi, I'm Andy 👋
 
 > **I build tools I wish already existed.**
@@ -30,29 +36,33 @@ I enjoy turning repetitive, error-prone, or overly complicated workflows into si
 
 ## 🚀 Featured Projects
 
+### 🖼️ xImageDuplicateChecker
+
+**High-performance duplicate image detection**
+
+Built for large image collections, including datasets with **millions of files**.
+
+Supports multiple detection strategies:
+
+`MD5` · `dHash` · `pHash` · `aHash` · accelerated image comparison
+
+Capable of detecting not only identical files, but also resized, cropped, and modified images.
+
+`Python` `Computer Vision` `Image Processing`
+
+---
+
 ### 🗄️ OracleSchemaSnapshot
 
 **Oracle schema snapshot, comparison & synchronization tool**
 
-Capture Oracle database structures, compare schemas across environments offline, and automatically generate auditable synchronization SQL.
+Capture Oracle database structures, compare schemas across environments without requiring both databases to be online at the same time, and automatically generate auditable synchronization SQL.
 
-Designed for real-world database deployment and upgrade workflows.
+**Snapshot → Compare → Review → Generate SQL**
+
+Designed for development, production, customer environments, and other scenarios where Oracle databases may exist in isolated networks.
 
 `Python` `Oracle` `Schema Compare` `Database DevOps`
-
----
-
-### 🧹 OracleArchiveManager
-
-**Safe historical data archiving for large Oracle tables**
-
-A controlled workflow for archiving large Oracle tables:
-
-**Analyze → Copy → Verify → Human Approval → Cleanup**
-
-Designed with safety in mind — data deletion always requires explicit confirmation, with full audit logging throughout the process.
-
-`Python` `Oracle 11g+` `Data Archiving` `Database Maintenance`
 
 ---
 
@@ -67,25 +77,23 @@ Compare two versions of engineering PDF drawings and automatically identify chan
 * geometry
 * engineering information
 
-Combines traditional document analysis with multimodal AI to help understand *what changed* between drawing revisions.
+Combines traditional computer vision with multimodal AI to understand not only **where something changed**, but also **what changed**.
 
-`Python` `PDF` `Multimodal AI` `Engineering`
+`Python` `OpenCV` `PDF` `Multimodal AI` `Engineering`
 
 ---
 
-### 🖼️ xImageDuplicateChecker
+### 🧹 OracleArchiveManager
 
-**High-performance duplicate image detection**
+**Safe historical data archiving for large Oracle tables**
 
-Built for large image collections, including datasets with **millions of files**.
+A controlled workflow for archiving large Oracle tables:
 
-Supports multiple detection strategies:
+**Analyze → Copy → Verify → Human Approval → Cleanup**
 
-`MD5` · `dHash` · `pHash` · `aHash` · accelerated image comparison
+Designed with safety in mind — destructive operations require explicit confirmation, with audit logging throughout the process.
 
-Capable of detecting not only identical files, but also resized, cropped, and modified images.
-
-`Python` `Computer Vision` `Image Processing`
+`Python` `Oracle 11g+` `Data Archiving` `Database Maintenance`
 
 ---
 
@@ -107,11 +115,11 @@ I prefer software that solves an actual problem.
 
 Many of my projects start with something simple:
 
-> *“Why am I still doing this manually?”*
+> **“Why am I still doing this manually?”**
 
 or
 
-> *“Why doesn't a simple tool for this already exist?”*
+> **“Why doesn't a simple tool for this already exist?”**
 
 Then I build one.
 
@@ -141,3 +149,5 @@ Sometimes a useful tool is enough.
 ### Thanks for stopping by 👋
 
 If one of my projects saves you some time, solves a problem, or gives you an idea for your own project, then it has done its job.
+
+**If you find something useful, feel free to explore, fork, or leave a ⭐.**
